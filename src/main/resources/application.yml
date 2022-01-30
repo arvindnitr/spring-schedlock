@@ -1,0 +1,13 @@
+printTime.delay: PT10S
+printTime.cron: 0 * * * * *
+maxPoolSize: 4
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 5
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@//256.35.76.170:1521/pdborcl
+    username: schema1
+    password: password1
